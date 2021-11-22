@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Native app</string>
+    <string name="notification_01"><i>Welcome</i> <b>Back</b>.</string>
+    <string name="notification_02"> \"Your information\" were <u>accepted</u>.</string>
+    <string name="notification_03">If (n &gt; 3 &amp;&amp; n &lt; 5) then &#8230;</string>
+    <string name="tv_username">Username</string>
+    <string name="tv_reporter">Reporter name</string>
+    <string name="tv_address">Address</string>
+    <string name="tv_type">Type</string>
+    <string name="tv_bedrooms">Bedrooms</string>
+    <string name="tv_price">Price</string>
+    <string name="tv_furniture">Furniture types</string>
+    <string name="tv_property_type">Property type</string>
+    <string name="tv_success">Your registration information has been successfully created</string>
+    <string name="btn_next">Next</string>
+</resources>

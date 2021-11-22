@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00BCD4"
+        android:text="@string/btn_next"
+        app:layout_constraintEnd_toEndOf="@+id/tvReporter"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/lblReporter"
+        app:layout_constraintTop_toBottomOf="@+id/tvReporter" />
+
+    <EditText
+        android:id="@+id/tvUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/lblUsername"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:labelFor="@id/tvUsername"
+        android:text="@string/tv_username"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvUsername" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#DC0909"
+        app:layout_constraintBottom_toTopOf="@+id/tvUsername"
+        app:layout_constraintEnd_toEndOf="@+id/tvUsername"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblUsername" />
+
+    <TextView
+        android:id="@+id/lblAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_address"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+        app:layout_constraintEnd_toEndOf="@+id/lblUsername"
+        app:layout_constraintStart_toStartOf="@+id/lblUsername"
+        app:layout_constraintTop_toTopOf="@+id/tvAddress" />
+
+    <EditText
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvUsername"
+        app:layout_constraintStart_toStartOf="@+id/tvUsername"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INPUT SOME INFORMATIONS"
+        app:layout_constraintBottom_toTopOf="@+id/tvError"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <TextView
+        android:id="@+id/lblBedrooms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_bedrooms"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBedrooms"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/lblAddress"
+        app:layout_constraintTop_toTopOf="@+id/tvBedrooms"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <EditText
+        android:id="@+id/tvBedrooms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_price"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPrice"
+        app:layout_constraintEnd_toEndOf="@+id/lblBedrooms"
+        app:layout_constraintStart_toStartOf="@+id/lblBedrooms"
+        app:layout_constraintTop_toTopOf="@+id/tvPrice" />
+
+    <EditText
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvBedrooms"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvBedrooms"
+        app:layout_constraintTop_toBottomOf="@+id/tvBedrooms" />
+
+    <TextView
+        android:id="@+id/lblFurniture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_furniture"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFurniture"
+        app:layout_constraintEnd_toEndOf="@+id/lblPrice"
+        app:layout_constraintStart_toStartOf="@+id/lblPrice"
+        app:layout_constraintTop_toTopOf="@+id/tvFurniture" />
+
+    <EditText
+        android:id="@+id/tvFurniture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+    <TextView
+        android:id="@+id/lblPropertytype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_property_type"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropertytype"
+        app:layout_constraintEnd_toEndOf="@+id/lblFurniture"
+        app:layout_constraintStart_toStartOf="@+id/lblFurniture"
+        app:layout_constraintTop_toTopOf="@+id/tvPropertytype" />
+
+    <EditText
+        android:id="@+id/tvPropertytype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvFurniture"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvFurniture"
+        app:layout_constraintTop_toBottomOf="@+id/tvFurniture" />
+
+    <TextView
+        android:id="@+id/lblReporter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_reporter"
+        app:layout_constraintBottom_toBottomOf="@+id/tvReporter"
+        app:layout_constraintEnd_toEndOf="@+id/lblPropertytype"
+        app:layout_constraintStart_toStartOf="@+id/lblPropertytype"
+        app:layout_constraintTop_toTopOf="@+id/tvReporter" />
+
+    <EditText
+        android:id="@+id/tvReporter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertytype"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertytype"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertytype" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
